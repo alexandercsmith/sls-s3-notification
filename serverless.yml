@@ -6,7 +6,16 @@ provider:
   stage: dev
   region: us-east-1
   timeout: 300
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:*
+      Resource: "*"
 
 functions:
-  hello:
+  s3_notification:
     handler: handler.s3_notification
+    events:
+      - s3:
+        bucket: sls-s3-notification
+        event: s3:ObjectCreated:*

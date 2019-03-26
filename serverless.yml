@@ -19,3 +19,5 @@ functions:
       - s3:
         bucket: sls-s3-notification
         event: s3:ObjectCreated:*
+        # rules:
+        #   - suffix: .pdf

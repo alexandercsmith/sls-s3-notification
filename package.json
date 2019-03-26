@@ -1,0 +1,12 @@
+{
+  "name": "sls-s3-notification",
+  "version": "1.0.0",
+  "description": "Serverless S3 Notification Service",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Alexander Smith",
+  "license": "ISC"
+}
